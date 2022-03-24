@@ -208,11 +208,12 @@
       transform: translate(-50%, -50%);
       vertical-align: middle;
       border: 3px solid teal;
+      height: 280px;
     }
 
     .fname {
       position: relative;
-      margin: 20px auto;
+      margin: 30px auto;
       width: 70%;
     }
 
@@ -243,15 +244,34 @@
       color: black;
     }
 
-    /*.frame {
-      border: 3px solid teal;
+    .frame {
+      position: relative;
+      width: 70%;
+      margin: 30px auto;
+    }
+
+    .frame p {
+      position: absolute;
+      top: 115px;
+      left: 240px;
+      margin: 10px 0;
+    }
+
+    .date {
+      border: 1px solid teal;
+      margin: 0 5px;
     }
 
     .wrap textarea {
       border: 3px solid teal;
       font-size: 20px;
       color: black;
-    }*/
+      width: 100%;
+    }
+
+    .date {
+      po
+    }
 
     .cool:focus {
       outline: none;
@@ -269,12 +289,12 @@
       <label for="fname">Title</label>
       <input id="fname" type="text" class="cool" width="70px" />
     </div>
-    <!--<div class="frame">
-      <div>
-        <label for="lname">説明</label>
-        <textarea id="lname" cols="30" rows="10" class="cool"></textarea>
-      </div>
-    </div>-->
+    <div class="frame">
+      <label for="lname">Contents</label>
+      <textarea id="lname" cols="30" rows="5" class="cool"></textarea>
+      <p>期日:<input class="date" type="date">まで</p>
+    </div>
+  </div>
   </div>
 
   <script>
@@ -301,3 +321,10 @@
 </body>
 
 </html>
+
+背景の色
+追加ボタン
+borderradios
+カラーリングなどもろもろ
+追加ページとしてコンポーネント化
+メインから外す
